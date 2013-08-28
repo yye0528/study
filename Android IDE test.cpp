@@ -11,6 +11,8 @@ cout<<"changed a little more!"<<endl;
 
 cout<<"check it again!";
 
+count<<"changed a little!";
+
 return 0; 
 }
 
