@@ -1,12 +1,15 @@
 include <iostream>
+include <iomanip>
 
 using namespace std;
 
 int main(){
 
-count<<"hello, world!";
+cout<<"hello, world!"<<endl;
 
-count<<"changed a little!";
+cout<<"changed a little more!"<<endl;
+
+cout<<"check it again!";
 
 return 0; 
 }
