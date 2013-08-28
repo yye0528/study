@@ -15,7 +15,9 @@ int main(){
 
 	cout<<"hello, world!"<<endl;
 
-	cout<<"edit from android!"<<end;
+	cout<<"edit from android!"<<endl;
+	
+	cout<<"edit again from android!"<<endl;
 
 	return 0;
 
