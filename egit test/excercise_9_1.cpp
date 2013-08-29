@@ -20,10 +20,10 @@ class publication{
 			{}
 		void getdata(){
 			cout<<"title of publication: "; cin>>title; cout<<endl;
-			cout<<"price of the publication: $"; cint>>price; cout<<endl;
+			cout<<"price of the publication: $"; cin>>price; cout<<endl;
 		}
 		void putdata(){
-			count<<"Title: "<<title<<endl<<"Price: $"<<price;
+			cout<<"Title: "<<title<<endl<<"Price: $"<<price<<endl;
 		}		
 	};
 /////////////////////////////////
@@ -41,7 +41,7 @@ class book:private publication{
 		}
 		void putdata(){
 			publication::putdata();
-			cout<<"Number of pages: "<<page;
+			cout<<"Number of pages: "<<page<<endl;
 		}
 };
 /////////////////////////////////
@@ -59,7 +59,7 @@ class tape:private publication{
 		}
 		void putdata(){
 			publication::putdata();
-			cout<<"Playtime of the tape: "<<playtime<<" min";
+			cout<<"Playtime of the tape: "<<playtime<<" min"<<endl;
 		}
 };
 ////////////////////////////////////////////
