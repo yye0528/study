@@ -28,6 +28,7 @@ class lineType
 		lineType(float A, float B, float C):a(A),b(B),c(C)
 		{}
 
+		// test if the line is horizontal
 		bool isHori() const
 		{
 			if(a==0)
@@ -36,6 +37,7 @@ class lineType
 				return false;
 		}
 
+		// test if the line is vertical
 		bool isVerti() const
 		{
 			if(b==0)
@@ -144,13 +146,13 @@ class lineType
 
 		//start of the block of overloaded operator functions
 
-		lineType operator = (lineType& ll)
+		lineType& operator = (lineType& ll)
 		{
 			lineType newline(ll.a,ll.b,ll.c);
 			return newline;
 		}
 
-		lineType operator + (lineType& ll)
+		lineType& operator + (lineType& ll)
 		{
 			lineType newLine(a+ll.a,b+ll.b,c+ll.c);
 			return newLine;
