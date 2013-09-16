@@ -1,0 +1,70 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Sep 2, 2013
+ *      Author: ryan
+ */
+
+
+#include <stdio.h>
+#include <cstdlib>
+#include <iostream>
+#include <iomanip>
+#include <string.h>
+#include <fstream>
+#include <sstream>
+#include <dirent.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+
+using namespace std;
+
+
+
+class Console{
+	private:
+		string cmd;
+		string currDir="/home/ryan";
+	public:
+		Console():cmd(""),currDir("/home/ryan")
+			{};
+		void ls(string, bool);
+
+		void ls(string currDir,bool isLong=false){ // default to use short list
+
+			DIR *dir;
+			struct dirent *entry;
+			struct stat statbuf;
+		    if(dir=opendir(currDir.c_str())){
+
+				while((entry = readdir(dir))!=NULL){
+					cout<<entry->d_name<<"\n";
+				}
+				closedir(dir);
+			}else{
+				cout<<"error in openning the file \n";
+			}
+		}
+
+};
+
+int main(){
+
+	//get command from user input
+	do{
+    	cout<<"$";
+    	getline(cin,cmd);
+    	if (cmd=="list-short"){
+    		ls(currDir,false); //call list-short
+    	}else if(cmd=="list-long"){
+    		ls(currDir,true); // call list-long
+    	}else if(cmd.find("change")!=string::npos){
+    		string targetDir=cmd.erase(0,7); //get dir by removing "change" from command
+    		currDir=targetDir;
+    	}
+    }while(cmd != "exit");
+
+    return 0;
+}
+
+

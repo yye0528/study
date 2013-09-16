@@ -1,0 +1,24 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Aug 26, 2013
+ *      Author: ryan
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+	cout<<"hello, world!";
+
+	int a=1,b=2,c;
+
+	c=a+b;
+
+
+
+	return(0);
+}
+

@@ -1,0 +1,6 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>CLI added</message>\n<message>changed a little</message>\n<message>add a file</message>\n<message>test from ubuntu</message>\n</messages>
+default_repository_dir=https\://github.com/yye0528/study.git
+eclipse.preferences.version=1
+merge_mode=0
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300

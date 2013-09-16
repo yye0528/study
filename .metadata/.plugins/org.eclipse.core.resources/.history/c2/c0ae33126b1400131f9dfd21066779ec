@@ -1,0 +1,62 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Sep 2, 2013
+ *      Author: ryan
+ */
+
+
+#include<stdio.h>
+#include<cstdlib>
+#include<iostream>
+#include<iomanip>
+#include<string.h>
+#include<fstream>
+#include<sstream>
+#include<dirent.h>
+using namespace std;
+
+void ls(string, bool);
+
+int main(){
+
+	string cmd="";
+	string currDir="/home/ryan";
+
+	do{
+    	cout<<"~$ ";
+    	cin>>cmd;
+    	cout<<endl;
+
+    	if (cmd=="list-short"){
+    		ls(currDir);
+    	}else if(cmd=="list-long"){
+    		ls(currDir,true);
+    	}else if(cmd.find("change")!=string::npos){
+    		string targetDir=cmd.erase(0,7);
+    		currDir=targetDir;
+    	}
+    }while(cmd != "exit");
+
+
+    return 0;
+}
+void ls(string currDir,bool isLong=false){
+	ifstream inn;
+	string   str;
+	DIR *dir;
+	struct dirent *entry;
+    if( dir=opendir(currDir) ){
+		while(entry = readdir(dir)){
+			if( strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0 ){
+				cout<<entry->d_name<<"\n";
+			}
+
+		}
+		closedir(dir);
+	}else{
+		cout<<"error in openning the file";
+
+	}
+}
+

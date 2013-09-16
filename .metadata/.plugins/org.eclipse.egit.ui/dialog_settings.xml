@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="1" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<item value="true" key="CommitDialog.showUntracked"/>
+	<list key="CommitDialog.authorValues">
+		<item value="Ryan on Ubuntu &lt;yulinye.yy@gmail.com&gt;"/>
+		<item value="Ryan &lt;yulinye.yy@gmail.com&gt;"/>
+		<item value="Ryan on ubuntu&lt;yulinye.yy@gmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Ryan on Ubuntu &lt;yulinye.yy@gmail.com&gt;"/>
+		<item value="Ryan &lt;yulinye.yy@gmail.com&gt;"/>
+		<item value="Ryan on ubuntu&lt;yulinye.yy@gmail.com&gt;"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/yye0528/study.git"/>
+	</list>
+	<section name="GitCommitSearchPage">
+		<item value="0" key="HISTORY_SIZE"/>
+	</section>
+	<section name="GitImportWizard">
+	</section>
+	<section name="GitCommitMessageComponent">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.pull.PullResultDialog.dialogBounds">
+		<item value="599" key="DIALOG_WIDTH"/>
+		<item value="107" key="DIALOG_Y_ORIGIN"/>
+		<item value="419" key="DIALOG_HEIGHT"/>
+		<item value="352" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="CommitSelectionDialogSection">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="53" key="DIALOG_Y_ORIGIN"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="351" key="DIALOG_X_ORIGIN"/>
+			<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		</section>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item value="652" key="DIALOG_WIDTH"/>
+		<item value="82" key="DIALOG_Y_ORIGIN"/>
+		<item value="456" key="DIALOG_HEIGHT"/>
+		<item value="325" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+</section>
