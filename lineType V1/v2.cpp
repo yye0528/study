@@ -3,6 +3,7 @@
 / Chapter 2 programming problem 18
 / Author: Ryan Yulin Ye
 / Date: 9/13/2013
+/ Annotated from my Android tablet
 */
 
 #include <iostream>
